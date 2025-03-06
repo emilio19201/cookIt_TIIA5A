@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 export const About = () => (
-  <Fragment>
+  <div>
     <div className="row">
       <h3>About</h3>
       <p>
@@ -24,5 +24,5 @@ export const About = () => (
         tempora, vero est omnis esse.
       </p>
     </div>
-  </Fragment>
+  </div>
 );
