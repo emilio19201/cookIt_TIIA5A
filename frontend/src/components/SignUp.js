@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 const API = process.env.REACT_APP_API;
 
-export const Users = () => {
+export const SignUp = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
