@@ -1,13 +1,12 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import meter1 from "../assets/img/meter1.png";
+import meter2 from "../assets/img/meter2.png";
+import meter3 from "../assets/img/meter3.png";
+import meter4 from "../assets/img/meter4.png"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 
-export const Satisfaction = () => {
+export const Comments = () => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -34,31 +33,35 @@ export const Satisfaction = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Satisfaccion de usuarios</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <h2>Comentarios</h2>
+                        <p></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter1} alt="pfp1" />
                                 <h5>Diseño de página</h5>
+                                <h6>Calificación: 5</h6>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Facil navegacion</h5>
+                                <img src={meter2} alt="pfp2" />
+                                <h5>Fácil navegación</h5>
+                                <h6>Calificación: 4</h6>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Colorimetria</h5>
+                                <img src={meter3} alt="pfp3" />
+                                <h5>Colorimetría</h5>
+                                <h6>Calificación: 4</h6>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter4} alt="pfp4" />
                                 <h5>Recetas</h5>
+                                <h6>Calificación: 5</h6>
                             </div>
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="bgimg" />
     </section>
   )
 }
